@@ -1,0 +1,52 @@
+table 'Last Refreshed Date and Time'
+	lineageTag: 677e5538-4704-4085-8b79-ffafac928b91
+
+	column 'Last Refreshed Date and Time'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 20963d75-530f-4a2e-9adf-c9184e58e03c
+		summarizeBy: none
+		sourceColumn: Last Refreshed Date and Time
+
+		variation Variation
+			isDefault
+			relationship: 6eaef364-0e8f-4f79-a431-60045b8812f6
+			defaultHierarchy: LocalDateTable_fa2976dc-fe43-4a75-a21d-7df792d8be07.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Refreshed Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f8e2f4dc-baab-490e-8c25-63a76ade6561
+		summarizeBy: none
+		sourceColumn: Last Refreshed Date
+
+		variation Variation
+			isDefault
+			relationship: d38d1dc6-8eee-423e-94b6-9e3966911c1a
+			defaultHierarchy: LocalDateTable_713690e6-192d-409d-b7e1-86e09d43ee85.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition 'Last Refreshed Date and Time' = m
+		mode: import
+		source = ```
+				let
+				    Source = #table(
+				        {"Last Refreshed Date and Time"}, 
+				        {{DateTime.LocalNow()}}
+				    ),
+				    #"Duplicated Column" = Table.DuplicateColumn(Source, "Last Refreshed Date and Time", "Last Refreshed Date and Time - Copy"),
+				    #"Renamed Columns" = Table.RenameColumns(#"Duplicated Column",{{"Last Refreshed Date and Time - Copy", "Last Refreshed Date"}}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"Last Refreshed Date", type date}, {"Last Refreshed Date and Time", type datetime}})
+				in
+				    #"Changed Type"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

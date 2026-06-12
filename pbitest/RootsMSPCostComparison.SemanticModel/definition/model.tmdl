@@ -1,0 +1,27 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Dev- subscription","Prod- Subscription","Subscription","Last Refreshed Date and Time"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.143.878.0 (25.05)+b20aa3b866ec1b70879135a4e60e4b1301c75b21
+
+ref table DateTableTemplate_309e0c69-9139-4418-b483-fbd1041df6fe
+ref table 'Dev- subscription'
+ref table 'Prod- Subscription'
+ref table Subscription
+ref table MonthsTable
+ref table 'Last Refreshed Date and Time'
+ref table LocalDateTable_fa2976dc-fe43-4a75-a21d-7df792d8be07
+ref table LocalDateTable_713690e6-192d-409d-b7e1-86e09d43ee85
+ref table NewDeploymentsTable
+ref table DeletedDeploymentsTable
+
+ref cultureInfo en-US
+
