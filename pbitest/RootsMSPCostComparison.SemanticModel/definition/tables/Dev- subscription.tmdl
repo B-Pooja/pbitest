@@ -1,0 +1,182 @@
+table 'Dev- subscription'
+	lineageTag: 7f03e8d2-7bdb-4c0b-8b85-cb9d0ec5d45e
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 0e5ee570-8978-4db6-bc7f-77db9b46c328
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: string
+		lineageTag: e6fcc2e2-993d-416b-b9a9-709aca9c5f00
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekNumber
+		dataType: string
+		lineageTag: eaca93fb-ea28-40ce-80c6-82d926af1c55
+		summarizeBy: none
+		sourceColumn: WeekNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column Subscription
+		dataType: string
+		lineageTag: 0da50aa6-292e-47c6-9bb9-20cc7269790d
+		summarizeBy: none
+		sourceColumn: Subscription
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResourceId
+		dataType: string
+		lineageTag: 9a0e2b93-d254-464b-8bbf-9f8c422b1d97
+		summarizeBy: none
+		sourceColumn: ResourceId
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Resource Name'
+		dataType: string
+		lineageTag: a2f1ec7a-8a5b-4cbb-9a8c-928b7d7a77c3
+		summarizeBy: none
+		sourceColumn: Resource Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResourceType
+		dataType: string
+		lineageTag: 80b1e5a9-3ea5-4473-b463-fa5f9162f5b3
+		summarizeBy: none
+		sourceColumn: ResourceType
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResourceLocation
+		dataType: string
+		lineageTag: b292bf9e-a930-43b1-993d-c661b058c029
+		summarizeBy: none
+		sourceColumn: ResourceLocation
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResourceGroupName
+		dataType: string
+		lineageTag: 6b29e445-7daf-4edc-8e27-9e8b58b495ed
+		summarizeBy: none
+		sourceColumn: ResourceGroupName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ServiceName
+		dataType: string
+		lineageTag: 4e3d2126-2ee3-4466-9f09-e240ccc5e57b
+		summarizeBy: none
+		sourceColumn: ServiceName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Meter
+		dataType: string
+		lineageTag: aced2d88-71a7-4d22-bd8b-168d6920b310
+		summarizeBy: none
+		sourceColumn: Meter
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tags
+		dataType: string
+		lineageTag: 71e58a1c-ded3-4855-b5f5-7ef2ca4de45a
+		summarizeBy: none
+		sourceColumn: Tags
+
+		annotation SummarizationSetBy = Automatic
+
+	column CostUSD
+		dataType: double
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 586ecd5b-d369-40e3-9af9-d2595c6f15e4
+		summarizeBy: sum
+		sourceColumn: CostUSD
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cost
+		dataType: double
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: ab1e8299-046b-4a51-b020-f8b6877d93fc
+		summarizeBy: sum
+		sourceColumn: Cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column Currency
+		dataType: string
+		lineageTag: 135d51b3-4de4-468f-bb6e-dd44abefb43d
+		summarizeBy: none
+		sourceColumn: Currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'IT Owner Tag'
+		dataType: string
+		lineageTag: 71366145-3cbc-491d-bce8-b94d048e2e31
+		summarizeBy: none
+		sourceColumn: IT Owner Tag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Environment Tag'
+		dataType: string
+		lineageTag: 1462f897-b184-41a0-bb39-03b37298d612
+		summarizeBy: none
+		sourceColumn: Environment Tag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'IT Administrator Tag'
+		dataType: string
+		lineageTag: 07509487-6fdf-4284-99d9-ccd3b93c7edf
+		summarizeBy: none
+		sourceColumn: IT Administrator Tag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created By Tag'
+		dataType: string
+		lineageTag: e57064ee-5164-4252-b756-2f2d64030ad8
+		summarizeBy: none
+		sourceColumn: Created By Tag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'App Name Tag'
+		dataType: string
+		lineageTag: f2072309-a909-442e-829d-3a26b67997fd
+		summarizeBy: none
+		sourceColumn: App Name Tag
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Dev- subscription' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(Web.Contents("https://techstarconsultinginc-my.sharepoint.com/personal/poojabaskar_techstargroup_com/Documents/DESKTOP/PROJECTS/Roots/Cost%20Analysis%20BI%20Data/Cost_Management_Master_Sheet.xlsx"), null, true),
+				    #"Dev- subscription_Sheet" = Source{[Item="Dev- subscription",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Dev- subscription_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Year", Int64.Type}, {"Month", type text}, {"Week Number", type text}, {"Subscription", type text}, {"ResourceId", type text}, {"Resource Name", type text}, {"ResourceType", type text}, {"ResourceLocation", type text}, {"ResourceGroupName", type text}, {"ServiceName", type text}, {"Meter", type text}, {"Tags", type text}, {"CostUSD", type number}, {"Cost", type number}, {"Currency", type text}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Week Number", "WeekNumber"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

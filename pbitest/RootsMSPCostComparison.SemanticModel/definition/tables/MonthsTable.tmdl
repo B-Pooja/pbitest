@@ -1,0 +1,60 @@
+table MonthsTable
+	lineageTag: f223e323-b2ab-4ed9-a8a8-8e6f9bde6214
+
+	column 'Month Name'
+		lineageTag: 2fbf868e-f677-43c7-bc1b-83110e6dec8b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Name]
+		sortByColumn: 'Month Number'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		formatString: 0
+		lineageTag: 514ddbf0-33d1-4905-bcba-00930b28022f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Number]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurrentMonthFlag = ```
+			IF(
+			    MONTH(TODAY()) = 'MonthsTable'[Month Number],
+			    "Current Month",
+			    "Other"
+			)
+			
+			```
+		lineageTag: 26de4b37-9f72-4725-bd63-b778dc2733ad
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition MonthsTable = calculated
+		mode: import
+		source = ```
+				DATATABLE(
+				    "Month Name", STRING,
+				    "Month Number", INTEGER,
+				    {
+				        {"January", 1},
+				        {"February", 2},
+				        {"March", 3},
+				        {"April", 4},
+				        {"May", 5},
+				        {"June", 6},
+				        {"July", 7},
+				        {"August", 8},
+				        {"September", 9},
+				        {"October", 10},
+				        {"November", 11},
+				        {"December", 12}
+				    }
+				)
+				
+				```
+
+	annotation PBI_Id = 8a4c1ba12fa14308820e42f0978f0525
+
