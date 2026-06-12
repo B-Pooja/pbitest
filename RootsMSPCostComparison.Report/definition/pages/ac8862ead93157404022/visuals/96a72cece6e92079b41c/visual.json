@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "96a72cece6e92079b41c",
+  "position": {
+    "x": 1282.6489394360924,
+    "y": 454.9918505202848,
+    "z": 10000,
+    "height": 108.974358974359,
+    "width": 197.43589743589746,
+    "tabOrder": 18000
+  },
+  "visualGroup": {
+    "displayName": "Subscription Group",
+    "groupMode": "ScaleMode"
+  }
+}

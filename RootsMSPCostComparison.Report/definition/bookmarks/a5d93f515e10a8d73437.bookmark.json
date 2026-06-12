@@ -1,0 +1,1328 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.0.0/schema.json",
+  "displayName": "Deleted Deploy BM",
+  "name": "a5d93f515e10a8d73437",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "a1643b08326aa468eb97",
+    "sections": {
+      "a1643b08326aa468eb97": {
+        "visualContainers": {
+          "5efbaf572bd1cd659e9a": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "c468ddaa291b28edc2a7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2f8d5003450263c1c261",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "ResourceLocation"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1040e38300c1ca180e0a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DeletedDeploymentsTable"
+                            }
+                          },
+                          "Property": "CostUSD"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pieChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DeletedDeploymentsTable"
+                            }
+                          },
+                          "Property": "CostUSD"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "ResourceLocation"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "fc28f30a3a24da3905ac": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "30da7c094dc4490e7061",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "ServiceName"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8dfe0d0a7ae300267a7d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DeletedDeploymentsTable"
+                            }
+                          },
+                          "Property": "CostUSD"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DeletedDeploymentsTable"
+                            }
+                          },
+                          "Property": "CostUSD"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "ServiceName"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "d01762bae808ae006b21": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "feed16e78aa0ae3a1759",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "Subscription"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a11dea3ab40380d4a60d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DeletedDeploymentsTable"
+                            }
+                          },
+                          "Property": "CostUSD"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DeletedDeploymentsTable"
+                            }
+                          },
+                          "Property": "CostUSD"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "Subscription"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "428e0f4350bd3567cec0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "26d4917729ea9c21d06b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DeletedDeploymentsTable"
+                            }
+                          },
+                          "Property": "CostUSD"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DeletedDeploymentsTable"
+                            }
+                          },
+                          "Property": "CostUSD"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "9f928cb180866e440c9d": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "9412fe56446228214246": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "381508ae5c260cd4ab97",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "Subscription"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "Subscription"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "13d23c95a5009d61d704": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "5aaa37a53db8b6ec639b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "50e5696488b0927621e7",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "ServiceName"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "ServiceName"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "7cc93487b5b1ba97a84a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4d4b0faf00c43ce37424",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "ResourceLocation"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "ResourceLocation"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "12e6496827a970c8beb8": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "14abd254c2c830557b44": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "1007f055103b6804156c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "89fa06b23158ac020a4d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "IT Owner Tag"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        },
+                        "isInvertedSelectionMode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "IT Owner Tag"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "0bc2f9413100b45bcc06": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c932bc02a49bd907c002",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "IT Administrator Tag"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "IT Administrator Tag"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "5c88af7ad670a5a7ca60": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "6b71412de5572824a278",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "Environment Tag"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "Environment Tag"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "d3b4bb1d790700b0cb0c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ff358fca505904311d06",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "Created By Tag"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "Created By Tag"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a906cccf272c07cb74d3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "69a44d65ec825445d1ca",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "App Name Tag"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "App Name Tag"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "2191269b61d09bc6ea08": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "b526202178e791e433b5": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "20c6cd400c4a783e904e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "Subscription"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8a250080b84e59b79e05",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "ServiceName"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "714c835cb3399740c45d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "ResourceGroupName"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ccf16b03d63b02ee628a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "Resource Name"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "542a76ec30449db5087b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DeletedDeploymentsTable"
+                            }
+                          },
+                          "Property": "CostUSD"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f207647e8aa9061ec220",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "WeekNumber"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "activeProjections": {
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "Subscription"
+                    }
+                  }
+                ],
+                "Columns": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "WeekNumber"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "DeletedDeploymentsTable.Subscription"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "DeletedDeploymentsTable"
+                              }
+                            },
+                            "Property": "Subscription"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "DeletedDeploymentsTable.ServiceName"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "DeletedDeploymentsTable"
+                              }
+                            },
+                            "Property": "ServiceName"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "DeletedDeploymentsTable.ResourceGroupName"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "DeletedDeploymentsTable"
+                              }
+                            },
+                            "Property": "ResourceGroupName"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "DeletedDeploymentsTable.Resource Name"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": null,
+                    "children": [
+                      {
+                        "identityValues": [
+                          {
+                            "Literal": {
+                              "Value": "'Dev'"
+                            }
+                          }
+                        ],
+                        "children": [
+                          {
+                            "identityValues": [
+                              {
+                                "Literal": {
+                                  "Value": "'Azure Database for PostgreSQL'"
+                                }
+                              }
+                            ],
+                            "isToggled": true,
+                            "children": [
+                              {
+                                "identityValues": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'rg-appsdev-wus2'"
+                                    }
+                                  }
+                                ],
+                                "isToggled": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "91a635c58c72841a10ac": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "b5254f8382023ee44380": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3d6ef493c76512062171",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "s",
+                        "Entity": "Subscription",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "s"
+                                        }
+                                      },
+                                      "Property": "IT Owner Tag"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'No Owner Tags'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Subscription"
+                        }
+                      },
+                      "Property": "IT Owner Tag"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "3bb439873c26ab5c4801",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "IT Owner Tag"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a545a89a3344909b7ca5",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DeletedDeploymentsTable"
+                            }
+                          },
+                          "Property": "CostUSD"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DeletedDeploymentsTable"
+                            }
+                          },
+                          "Property": "CostUSD"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DeletedDeploymentsTable"
+                        }
+                      },
+                      "Property": "IT Owner Tag"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "ec6bb81b98cc02003760": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "78684913a76072bce431",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Subscription"
+                        }
+                      },
+                      "Property": "Subscription"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Subscription"
+                        }
+                      },
+                      "Property": "Subscription"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "16056439c30052d77a12": {
+            "singleVisual": {
+              "visualType": "pageNavigator",
+              "objects": {}
+            }
+          },
+          "23a6c374e007730eb606": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "acdcb8962dc78e1280ae": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "00c5e8c97424d5792bca",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DeletedDeploymentsTable"
+                            }
+                          },
+                          "Property": "Resource Name"
+                        }
+                      },
+                      "Function": 2
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DeletedDeploymentsTable"
+                            }
+                          },
+                          "Property": "Resource Name"
+                        }
+                      },
+                      "Function": 2
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "a347547b8a5d5b514184": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "a940dc38ba2479ca46e4": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "e21f1affcb52bcbc4a31": {
+            "children": {
+              "a3343c53719ac008dc43": {
+                "isHidden": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

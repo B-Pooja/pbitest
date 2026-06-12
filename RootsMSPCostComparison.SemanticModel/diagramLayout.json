@@ -1,0 +1,113 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Dev- subscription",
+          "nodeLineageTag": "7f03e8d2-7bdb-4c0b-8b85-cb9d0ec5d45e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 0
+          },
+          "nodeIndex": "Prod- Subscription",
+          "nodeLineageTag": "4f8b7ccf-65fe-4cd8-b3c1-42a8da70913c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 562.28571428571433,
+            "y": 100.00000000000001
+          },
+          "nodeIndex": "Subscription",
+          "nodeLineageTag": "5f81b557-4af8-44b7-a1bd-26dbe789f466",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1162.2446183953034,
+            "y": 134.28571428571431
+          },
+          "nodeIndex": "MonthsTable",
+          "nodeLineageTag": "f223e323-b2ab-4ed9-a8a8-8e6f9bde6214",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 13.387475538160288,
+            "y": 334.57142857142856
+          },
+          "nodeIndex": "Last Refreshed Date and Time",
+          "nodeLineageTag": "677e5538-4704-4085-8b79-ffafac928b91",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 826.28180039138954,
+            "y": 0
+          },
+          "nodeIndex": "NewDeploymentsTable",
+          "nodeLineageTag": "79c5cfb8-a9c7-46b2-afff-5a4bf7deb62b",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 864.90994385123952,
+            "y": 309.35420743639912
+          },
+          "nodeIndex": "DeletedDeploymentsTable",
+          "nodeLineageTag": "ccb1fc87-3ec9-4abc-9a3a-97dda2c10ccc",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 70,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
