@@ -1166,7 +1166,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "MonthsTable"
+                          "Entity": "Months Table"
                         }
                       },
                       "Property": "CurrentMonthFlag"
@@ -1181,7 +1181,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "MonthsTable"
+                          "Entity": "Months Table"
                         }
                       },
                       "Property": "Month Name"
@@ -1216,7 +1216,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "MonthsTable"
+                          "Entity": "Months Table"
                         }
                       },
                       "Property": "Month Name"

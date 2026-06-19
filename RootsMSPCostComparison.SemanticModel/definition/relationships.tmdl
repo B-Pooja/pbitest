@@ -1,6 +1,6 @@
 relationship 4a8964dc-d580-2b92-182a-c6357904adfe
 	fromColumn: Subscription.Month
-	toColumn: MonthsTable.'Month Name'
+	toColumn: 'Months Table'.'Month Name'
 
 relationship 6eaef364-0e8f-4f79-a431-60045b8812f6
 	joinOnDateBehavior: datePartOnly

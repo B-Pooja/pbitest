@@ -16,7 +16,7 @@ ref table DateTableTemplate_309e0c69-9139-4418-b483-fbd1041df6fe
 ref table 'Dev- subscription'
 ref table 'Prod- Subscription'
 ref table Subscription
-ref table MonthsTable
+ref table 'Months Table'
 ref table 'Last Refreshed Date and Time'
 ref table LocalDateTable_fa2976dc-fe43-4a75-a21d-7df792d8be07
 ref table LocalDateTable_713690e6-192d-409d-b7e1-86e09d43ee85
