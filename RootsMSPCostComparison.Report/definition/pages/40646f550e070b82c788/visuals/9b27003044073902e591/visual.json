@@ -1,0 +1,66 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "9b27003044073902e591",
+  "position": {
+    "x": 111.72675521821633,
+    "y": 160.303605313093,
+    "z": 0,
+    "height": 398.33017077798866,
+    "width": 1003.9215686274511,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Subscription"
+                    }
+                  },
+                  "Property": "App Name Tag"
+                }
+              },
+              "queryRef": "Subscription.App Name Tag",
+              "nativeQueryRef": "App Name Tag"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Subscription"
+                    }
+                  },
+                  "Property": "IT Administrator Tag"
+                }
+              },
+              "queryRef": "Subscription.IT Administrator Tag",
+              "nativeQueryRef": "IT Administrator Tag"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Subscription"
+                    }
+                  },
+                  "Property": "IT Owner Tag"
+                }
+              },
+              "queryRef": "Subscription.IT Owner Tag",
+              "nativeQueryRef": "IT Owner Tag"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
