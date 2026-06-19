@@ -184,6 +184,22 @@
             "id": "selected"
           }
         }
+      ],
+      "pages": [
+        {
+          "properties": {
+            "showPage": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "40646f550e070b82c788"
+          }
+        }
       ]
     },
     "visualContainerObjects": {

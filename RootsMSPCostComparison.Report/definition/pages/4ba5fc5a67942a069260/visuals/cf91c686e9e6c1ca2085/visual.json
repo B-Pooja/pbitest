@@ -227,6 +227,20 @@
           "selector": {
             "id": "ad6c3192b9a9c4c1cbe6"
           }
+        },
+        {
+          "properties": {
+            "showPage": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "40646f550e070b82c788"
+          }
         }
       ]
     },
