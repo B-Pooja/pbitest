@@ -49,19 +49,6 @@
         },
         {
           "location": {
-            "x": 1162.2446183953034,
-            "y": 134.28571428571431
-          },
-          "nodeIndex": "MonthsTable",
-          "nodeLineageTag": "f223e323-b2ab-4ed9-a8a8-8e6f9bde6214",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 4
-        },
-        {
-          "location": {
             "x": 13.387475538160288,
             "y": 334.57142857142856
           },
@@ -93,6 +80,18 @@
           },
           "nodeIndex": "DeletedDeploymentsTable",
           "nodeLineageTag": "ccb1fc87-3ec9-4abc-9a3a-97dda2c10ccc",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1162.2446183953034,
+            "y": 134.28571428571431
+          },
+          "nodeIndex": "Months Table",
           "size": {
             "height": 200,
             "width": 234

@@ -200,6 +200,14 @@ table NewDeploymentsTable
 
 		annotation SummarizationSetBy = Automatic
 
+	column Column21
+		lineageTag: fc2e2864-48d4-4275-a3d1-b7fdb406b39b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Subscription[Column21]
+
+		annotation SummarizationSetBy = Automatic
+
 	partition NewDeploymentsTable = calculated
 		mode: import
 		source = ```

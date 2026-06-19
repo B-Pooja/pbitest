@@ -1,4 +1,4 @@
-table MonthsTable
+table 'Months Table'
 	lineageTag: f223e323-b2ab-4ed9-a8a8-8e6f9bde6214
 
 	column 'Month Name'
@@ -21,7 +21,7 @@ table MonthsTable
 
 	column CurrentMonthFlag = ```
 			IF(
-			    MONTH(TODAY()) = 'MonthsTable'[Month Number],
+			    MONTH(TODAY()) = 'Months Table'[Month Number],
 			    "Current Month",
 			    "Other"
 			)
@@ -32,7 +32,7 @@ table MonthsTable
 
 		annotation SummarizationSetBy = Automatic
 
-	partition MonthsTable = calculated
+	partition 'Months Table' = calculated
 		mode: import
 		source = ```
 				DATATABLE(

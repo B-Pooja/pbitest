@@ -164,6 +164,14 @@ table 'Dev- subscription'
 
 		annotation SummarizationSetBy = Automatic
 
+	column Column21
+		dataType: string
+		lineageTag: 47c7dbd3-5884-4508-9494-2fcfa9227fb8
+		summarizeBy: none
+		sourceColumn: Column21
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Dev- subscription' = m
 		mode: import
 		source =

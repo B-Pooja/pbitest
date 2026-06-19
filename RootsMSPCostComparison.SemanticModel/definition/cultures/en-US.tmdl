@@ -4237,7 +4237,7 @@ cultureInfo en-US
 			    "months_table": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "MonthsTable"
+			          "ConceptualEntity": "Months Table"
 			        }
 			      },
 			      "State": "Generated",
@@ -4366,7 +4366,7 @@ cultureInfo en-US
 			    "months_table.month_name": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "MonthsTable",
+			          "ConceptualEntity": "Months Table",
 			          "ConceptualProperty": "Month Name"
 			        }
 			      },
@@ -4442,7 +4442,7 @@ cultureInfo en-US
 			    "months_table.month_number": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "MonthsTable",
+			          "ConceptualEntity": "Months Table",
 			          "ConceptualProperty": "Month Number"
 			        }
 			      },
@@ -4478,7 +4478,7 @@ cultureInfo en-US
 			    "months_table.current_month_flag": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "MonthsTable",
+			          "ConceptualEntity": "Months Table",
 			          "ConceptualProperty": "CurrentMonthFlag"
 			        }
 			      },
@@ -15035,7 +15035,7 @@ cultureInfo en-US
 			    },
 			    "months_table_has_current_month_flag": {
 			      "Binding": {
-			        "ConceptualEntity": "MonthsTable"
+			        "ConceptualEntity": "Months Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15068,7 +15068,7 @@ cultureInfo en-US
 			    },
 			    "months_table_has_month_number": {
 			      "Binding": {
-			        "ConceptualEntity": "MonthsTable"
+			        "ConceptualEntity": "Months Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15101,7 +15101,7 @@ cultureInfo en-US
 			    },
 			    "months_table_has_month_name": {
 			      "Binding": {
-			        "ConceptualEntity": "MonthsTable"
+			        "ConceptualEntity": "Months Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {

@@ -200,6 +200,14 @@ table DeletedDeploymentsTable
 
 		annotation SummarizationSetBy = Automatic
 
+	column Column21
+		lineageTag: b0e035fe-3751-41dc-bfa1-c3d5929765c0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Subscription[Column21]
+
+		annotation SummarizationSetBy = Automatic
+
 	partition DeletedDeploymentsTable = calculated
 		mode: import
 		source = ```
